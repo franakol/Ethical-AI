@@ -1,27 +1,25 @@
-# EthicalAiDashboard
+# Ethical AI Dashboard Demo with Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+This project demonstrates a simple Angular AI dashboard that incorporates ethical design practices, including transparent AI predictions, clear explanations of influencing features, and a feedback mechanism. The project uses **Angular**, **Angular Material**, and **Chart.js** for visualization.
 
-## Development server
+## Features
+- Displays AI prediction confidence score
+- Shows key features influencing predictions
+- Provides a user feedback form
+- Built with accessibility and transparency in mind
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prerequisites
 
-## Code scaffolding
+- **Node.js** and **npm** installed
+- **Angular CLI** installed
+- Basic knowledge of Angular and TypeScript
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Getting Started
 
-## Build
+Follow these steps to set up the project on your local machine.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Step 1: Create a New Angular Project
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+ng new ethical-ai-dashboard --routing
+cd ethical-ai-dashboard

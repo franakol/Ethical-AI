@@ -1,0 +1,35 @@
+<div class="dashboard-container">
+    <mat-card class="score-card">
+      <mat-card-content>
+        <h2>AI Prediction Confidence Score</h2>
+        <div class="score">
+          {{ (confidenceScore * 100).toFixed(2) }}%
+        </div>
+        <p>This score reflects the model's confidence in its current prediction.</p>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="features-card">
+      <mat-card-content>
+        <h2>Key Influencing Features</h2>
+        <canvas baseChart
+          [data]="barChartData"
+          [options]="barChartOptions"
+          [type]="barChartType">
+        </canvas>
+      </mat-card-content>
+    </mat-card>
+  
+    <mat-card class="feedback-card">
+      <mat-card-content>
+        <h2>User Feedback</h2>
+        <form [formGroup]="feedbackForm" (ngSubmit)="submitFeedback()">
+          <mat-form-field class="feedback-input" appearance="outline">
+            <mat-label>Provide your feedback</mat-label>
+            <input matInput formControlName="feedback" placeholder="Type your feedback here" />
+          </mat-form-field>
+          <button mat-raised-button color="primary" type="submit">Submit Feedback</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>

@@ -1,0 +1,38 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  mat-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .score-card {
+    background-color: #e3f2fd;
+    text-align: center;
+  }
+  
+  .score {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1976d2;
+  }
+  
+  .features-card {
+    padding-top: 10px;
+  }
+  
+  .feedback-card {
+    background-color: #f1f8e9;
+  }
+  
+  .feedback-input {
+    width: 100%;
+  }
+  
